@@ -5,8 +5,13 @@ import LinePortrait from "../../components/LinePortrait";
 
 function ChiSono() {
   const backgroundBlobs = [
-    <BackgroundBlob key="chi-sono-blob-1" className="w-64 h-64 right-64 top-96" color="purple" />,
-    <BackgroundBlob key="chi-sono-blob-2" className="w-96 h-96 -right-36 top-0" color="pink" />,
+    <BackgroundBlob
+      key="chi-sono-blob-1"
+      sizeClasses="w-64 h-64"
+      positionClasses="right-[624px] top-96"
+      color="purple"
+    />,
+    <BackgroundBlob key="chi-sono-blob-2" sizeClasses="w-96 h-96" positionClasses="right-64 top-0" color="pink" />,
   ];
 
   return (

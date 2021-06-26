@@ -13,9 +13,14 @@ function Header() {
   const arrowDownOpacity = useTransform(scrollYProgress, [0, 0.25], [1, 0]);
 
   const backgroundBlobs = [
-    <BackgroundBlob key="header-blob-1" color="purple" className="w-96 h-96 lg:w-[512px] -left-48 lg:h-[512px]" />,
-    <BackgroundBlob key="header-blob-2" color="pink" className="w-96 h-96 left-1/2 top-16" />,
-    <BackgroundBlob key="header-blob-3" color="yellow" className="w-96 h-96 right-1/2 top-[512px]" />,
+    <BackgroundBlob
+      key="header-blob-1"
+      color="purple"
+      sizeClasses="w-96 h-96 lg:h-[512px] lg:w-[512px]"
+      positionClasses="-left-48 "
+    />,
+    <BackgroundBlob key="header-blob-2" color="pink" sizeClasses="w-96 h-96" positionClasses="right-[512px] top-16" />,
+    <BackgroundBlob key="header-blob-3" color="yellow" sizeClasses="w-96 h-96" positionClasses="left-64 top-[512px]" />,
   ];
 
   return (
@@ -47,7 +52,7 @@ function Header() {
             <span className="text-pink-300 drop-shadow-pink">aziende</span> a creare{" "}
             <span className="text-yellow-300 drop-shadow-yellow">eccezionali prodotti web</span>.
           </p>
-          <div className="flex lg:justify-end space-x-4 py-8 md:text-lg">
+          <div className="flex lg:justify-end items-start space-x-4 py-8 md:text-lg">
             <div>
               <Button buttonType="secondary" className="flex items-center space-x-2">
                 <>
@@ -55,6 +60,9 @@ function Header() {
                   <HiOutlineDownload className="relative bottom-[1px]" size={22} />
                 </>
               </Button>
+              <small className="text-gray-400/60 text-xs relative bottom-0.5 select-none">
+                Aggiornato il <span className="font-medium text-gray-500/60">26/06/2021</span>
+              </small>
             </div>
             <Button buttonType="primary">I miei progetti</Button>
           </div>

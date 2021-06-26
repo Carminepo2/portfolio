@@ -4,15 +4,14 @@ import { useInView } from "react-intersection-observer";
 
 const pathVariants = {
   hidden: {
-    opacity: 0.5,
     pathLength: 0,
   },
   visible: {
-    opacity: 1,
     pathLength: 1,
     transition: {
       duration: 4,
       ease: "easeOut",
+      delay: 0.2,
     },
   },
 };
