@@ -10,18 +10,18 @@ import { motion, useTransform, useViewportScroll } from "framer-motion";
 
 function Header() {
   const { scrollYProgress } = useViewportScroll();
-  const arrowDownOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
+  const arrowDownOpacity = useTransform(scrollYProgress, [0, 0.25], [1, 0]);
 
   const backgroundBlobs = [
-    <BackgroundBlob key="header-blob-1" color="purple" className="w-96 h-96 lg:w-[512px] lg:h-[512px]" />,
-    <BackgroundBlob key="header-blob-2" color="pink" className="w-96 h-96 left-1/2 top-32" />,
-    <BackgroundBlob key="header-blob-3" color="yellow" className="w-96 h-96 right-1/2 top-1/2 " />,
+    <BackgroundBlob key="header-blob-1" color="purple" className="w-96 h-96 lg:w-[512px] -left-48 lg:h-[512px]" />,
+    <BackgroundBlob key="header-blob-2" color="pink" className="w-96 h-96 left-1/2 top-16" />,
+    <BackgroundBlob key="header-blob-3" color="yellow" className="w-96 h-96 right-1/2 top-[512px]" />,
   ];
 
   return (
     <SectionWrapper background={backgroundBlobs}>
       <div className="flex items-center lg:justify-end h-screen">
-        <div>
+        <div className="relative">
           <div className="flex lg:grid grid-cols-2 items-center">
             <div />
             <div>
@@ -60,7 +60,7 @@ function Header() {
           </div>
           <motion.button
             style={{ opacity: arrowDownOpacity }}
-            className="relative inline-block transition-colors top-20 animate-bounce text-gray-400 hover:text-gray-500 text-opacity-25 drop-shadow-xl animation-duration-4000"
+            className="absolute hidden sm:block transition-colors -bottom-40 animate-bounce text-gray-400 hover:text-gray-500 text-opacity-25 drop-shadow-xl animation-duration-4000"
           >
             <IoChevronDownOutline size={80} />
           </motion.button>

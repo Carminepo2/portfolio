@@ -5,22 +5,25 @@ import LinePortrait from "../../components/LinePortrait";
 
 function ChiSono() {
   const backgroundBlobs = [
-    <BackgroundBlob key="chi-sono-blob-1" className="w-64 h-64 right-80 top-96" color="yellow" />,
-    <BackgroundBlob key="chi-sono-blob-2" className="w-96 h-96 right-0 top-0" color="purple" />,
+    <BackgroundBlob key="chi-sono-blob-1" className="w-64 h-64 right-64 top-96" color="purple" />,
+    <BackgroundBlob key="chi-sono-blob-2" className="w-96 h-96 -right-36 top-0" color="pink" />,
   ];
 
   return (
     <SectionWrapper background={backgroundBlobs}>
       <div className="flex flex-col justify-center ">
         <div className="grid grid-rows-2 md:grid-rows-none md:grid-cols-2">
-          <div>
-            <h2 className="mt-8 sm:mt-0 text-4xl sm:text-6xl font-medium text-gray-700">Chi sono</h2>
-            <p className="text-xl sm:text-2xl leading-8 sm:leading-10 text-gray-400 font-medium text-opacity-50 mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magnam consequatur rerum iusto sequi, sunt
-              eveniet ab doloribus aperiam maiores vero quod obcaecati a perferendis officia quis alias suscipit nulla!
-            </p>
+          <div className="flex flex-col justify-center">
+            <div>
+              <h2 className="mt-8 sm:mt-0 text-4xl sm:text-6xl font-medium text-gray-700">Chi sono</h2>
+              <p className="text-xl sm:text-2xl leading-8 sm:leading-10 text-gray-400 mt-4 w-10/12">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magnam consequatur rerum iusto sequi,
+                sunt eveniet ab doloribus aperiam maiores vero quod obcaecati a perferendis officia quis alias suscipit
+                nulla!
+              </p>
+            </div>
           </div>
-          <div className="relative flex justify-center lg:justify-end order-first md:order-last">
+          <div className="relative flex md:justify-center lg:justify-end order-first md:order-last">
             <LinePortrait />
           </div>
         </div>

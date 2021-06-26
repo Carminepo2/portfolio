@@ -8,12 +8,18 @@ export default function Home() {
       <Head>
         <title>Carmine Porricelli Portfolio</title>
       </Head>
-      <main className="relative w-full min-h-screen overflow-hidden">
+      <main className="overflow-hidden">
         <Header />
-        <div className="py-8 bg-white/60 relative z-20" />
+
+        <Separator />
+
         <ChiSono />
-        <div className="py-8 bg-white/60 relative z-20" />
+        <Separator />
       </main>
     </>
   );
+}
+
+function Separator() {
+  return <div className="py-8 sm:py-16 bg-white/60 relative z-20" />;
 }
