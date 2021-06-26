@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: Roboto;
+    font-display: swap;
+  }
+}
+
 @layer utilities {
   .animation-delay-2000 {
     animation-delay: 2s;
@@ -11,9 +18,5 @@
   }
   .animation-duration-4000 {
     animation-duration: 4s;
-  }
-
-  body {
-    @apply antialiased text-gray-700 font-roboto;
   }
 }
