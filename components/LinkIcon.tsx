@@ -23,7 +23,7 @@ function LinkIcon({ Icon, href, className }: LinkIconProps) {
       <Icon
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className={className}
+        className={`text-gray-700 ${className}`}
         size={40}
         style={isHovered ? { fill: "url(#blue-gradient)" } : {}}
       />
