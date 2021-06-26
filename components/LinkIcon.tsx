@@ -4,7 +4,7 @@ import { IconType } from "react-icons";
 interface LinkIconProps {
   Icon: IconType;
   href: string;
-  className?;
+  className?: string;
 }
 
 function LinkIcon({ Icon, href, className }: LinkIconProps) {
