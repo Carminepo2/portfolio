@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Carmine Porricelli Portfolio</title>
+        <title>Carmine Porricelli - Index</title>
       </Head>
       <main className="overflow-hidden">
         <Header />

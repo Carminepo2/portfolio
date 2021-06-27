@@ -1,18 +1,15 @@
 import clsx from "clsx";
 import React, { forwardRef, ReactChild } from "react";
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   buttonType: "primary" | "secondary";
   children: ReactChild;
   className?: string;
 }
 
-const Button = forwardRef<HTMLButtonElement, ButtonProps>(ButtonRef);
-
-function ButtonRef({ buttonType, children, className, ...props }, ref) {
+function Button({ buttonType, children, className, ...props }: ButtonProps) {
   return (
     <button
-      ref={ref}
       className={clsx(`py-2 px-6 sm:py-2 sm:px-8 rounded-md transition-colors ${className}`, {
         "bg-yellow-300 font-medium hover:bg-yellow-400 text-white shadow-primary-btn": buttonType === "primary",
 

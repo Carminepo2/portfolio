@@ -35,7 +35,7 @@ function BackgroundBlob({ color, sizeClasses, positionClasses }: BackgroundBlobP
     let radgrad = context.createRadialGradient(centerX, centerY, 0, centerX, centerY, radius);
     radgrad.addColorStop(0, `rgba(${colorValues[color]},0.7)`);
     radgrad.addColorStop(0.8, `rgba(${colorValues[color]},0.4)`);
-    radgrad.addColorStop(1, `rgba(${colorValues[color]},0.0)`);
+    radgrad.addColorStop(1, `rgba(${colorValues[color]},0)`);
 
     context.beginPath();
     context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);

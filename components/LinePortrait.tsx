@@ -18,10 +18,9 @@ const pathVariants = {
 
 function LinePortrait() {
   const controls = useAnimation();
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView({ triggerOnce: true });
 
   useEffect(() => {
-    console.log(inView);
     if (inView) {
       controls.start("visible");
     }

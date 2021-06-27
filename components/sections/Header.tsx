@@ -7,6 +7,7 @@ import { IoChevronDownOutline } from "react-icons/io5";
 import Button from "../../components/Button";
 import LinkIcon from "../../components/LinkIcon";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
+import Router from "next/dist/client/router";
 
 function Header() {
   const { scrollYProgress } = useViewportScroll();
@@ -49,10 +50,10 @@ function Header() {
               </h1>
             </div>
           </div>
-          <p className="lg:text-right text-2xl sm:text-3xl mt-4 sm:mt-8 text-gray-400 text-opacity-50 font-medium w-3/4 sm:w-full">
-            Aiuto <span className="text-purple-300 drop-shadow-purple">start up</span> e{" "}
-            <span className="text-pink-300 drop-shadow-pink">aziende</span> a creare{" "}
-            <span className="text-yellow-300 drop-shadow-yellow">eccezionali prodotti web</span>.
+          <p className="lg:text-right text-2xl sm:text-3xl mt-4 sm:mt-8 text-gray-600/50 w-3/4 sm:w-full">
+            Aiuto <span className="text-purple-300 drop-shadow-purple font-bold">start up</span> e{" "}
+            <span className="text-pink-300 drop-shadow-pink font-bold">aziende</span> a creare{" "}
+            <span className="text-yellow-300 drop-shadow-yellow font-bold">eccezionali prodotti web</span>.
           </p>
           <div className="flex lg:justify-end items-start space-x-4 py-8 md:text-lg">
             <div>
@@ -66,12 +67,14 @@ function Header() {
                 Aggiornato il <span className="font-medium text-gray-500/60">26/06/2021</span>
               </small>
             </div>
-            <Button buttonType="primary">I miei progetti</Button>
+            <Button onClick={() => Router.push("/projects")} buttonType="primary">
+              I miei progetti
+            </Button>
           </div>
           <motion.button
             aria-hidden="true"
             style={{ opacity: arrowDownOpacity }}
-            className="absolute hidden sm:block transition-colors -bottom-40 animate-bounce text-gray-400 hover:text-gray-500 text-opacity-25 drop-shadow-xl animation-duration-4000"
+            className="absolute hidden sm:block transition-colors -bottom-20 animate-bounce text-gray-400 hover:text-gray-500 text-opacity-25 drop-shadow-xl animation-duration-4000"
           >
             <IoChevronDownOutline size={80} />
           </motion.button>

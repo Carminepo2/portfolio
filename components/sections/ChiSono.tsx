@@ -16,10 +16,10 @@ function ChiSono() {
           <div className="flex flex-col justify-center">
             <div>
               <h2 className="mt-8 sm:mt-0 text-4xl sm:text-6xl font-medium text-gray-700">Chi sono</h2>
-              <p className="text-xl sm:text-2xl leading-8 sm:leading-10 text-gray-400 mt-4 w-10/12">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magnam consequatur rerum iusto sequi,
-                sunt eveniet ab doloribus aperiam maiores vero quod obcaecati a perferendis officia quis alias suscipit
-                nulla!
+              <p className="text-xl sm:text-2xl leading-8 sm:leading-10 text-gray-600/50 mt-4 w-10/12">
+                Front end developer e Web Designer amet consectetur adipisicing elit. Minus magnam consequatur rerum
+                iusto sequi, sunt eveniet ab doloribus aperiam maiores vero quod obcaecati a perferendis officia quis
+                alias suscipit nulla!
               </p>
             </div>
           </div>
