@@ -32,12 +32,14 @@ function Header() {
             <div>
               <div className="flex lg:justify-end relative -top-1 lg:top-2 space-x-4">
                 <div>
-                  <span className="sr-only">Github</span>
-                  <LinkIcon Icon={FaGithub} href="#" className="w-8 sm:w-auto" />
+                  <LinkIcon Icon={FaGithub} href="#" className="w-8 sm:w-auto">
+                    <span className="sr-only">Github</span>
+                  </LinkIcon>
                 </div>
                 <div>
-                  <span className="sr-only">Linkedin</span>
-                  <LinkIcon Icon={FaLinkedin} href="#" className="w-8 sm:w-auto" />
+                  <LinkIcon Icon={FaLinkedin} href="#" className="w-8 sm:w-auto">
+                    <span className="sr-only">Linkedin</span>
+                  </LinkIcon>
                 </div>
               </div>
               <h1 className="lg:text-right font-medium text-7xl sm:text-9xl text-gray-700">
@@ -67,6 +69,7 @@ function Header() {
             <Button buttonType="primary">I miei progetti</Button>
           </div>
           <motion.button
+            aria-hidden="true"
             style={{ opacity: arrowDownOpacity }}
             className="absolute hidden sm:block transition-colors -bottom-40 animate-bounce text-gray-400 hover:text-gray-500 text-opacity-25 drop-shadow-xl animation-duration-4000"
           >
