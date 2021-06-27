@@ -19,8 +19,8 @@ function Header() {
       sizeClasses="w-96 h-96 lg:h-[512px] lg:w-[512px]"
       positionClasses="-left-48 "
     />,
-    <BackgroundBlob key="header-blob-2" color="pink" sizeClasses="w-96 h-96" positionClasses="right-[512px] top-16" />,
-    <BackgroundBlob key="header-blob-3" color="yellow" sizeClasses="w-96 h-96" positionClasses="left-64 top-[512px]" />,
+    <BackgroundBlob key="header-blob-2" color="pink" sizeClasses="w-96 h-96" positionClasses="right-96 top-16" />,
+    <BackgroundBlob key="header-blob-3" color="yellow" sizeClasses="w-96 h-96" positionClasses="left-52 top-[512px]" />,
   ];
 
   return (
