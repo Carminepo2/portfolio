@@ -11,7 +11,7 @@ const pathVariants = {
     transition: {
       duration: 4,
       ease: "easeOut",
-      delay: 0.2,
+      delay: 0.1,
     },
   },
 };

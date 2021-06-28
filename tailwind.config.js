@@ -17,6 +17,7 @@ module.exports = {
       boxShadow: {
         "primary-btn": "0 4px 14px 0 rgb(252 211 77 / 39%)",
         "secondary-btn": "0 4px 14px 0 rgb(0 0 0 / 10%)",
+        projects: "rgba(0, 0, 0, 0.08) 0px 4px 12px",
       },
       dropShadow: {
         purple: "0 4px 6px rgba(196, 181, 253, 0.6)",
